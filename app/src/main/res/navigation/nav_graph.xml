@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/HomeFragment">
+
+    <fragment
+        android:id="@+id/HomeFragment"
+        android:name="com.project1.cookbook.HomeFragment"
+        android:label="@string/home_fragment_label"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_HomeFragment_to_ReadRecipesFragment"
+            app:destination="@id/ReadRecipesFragment" />
+        <action
+            android:id="@+id/action_HomeFragment_to_writeRecipesFragment2"
+            app:destination="@id/writeRecipesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ReadRecipesFragment"
+        android:name="com.project1.cookbook.ReadRecipesFragment"
+        android:label="@string/read_recipes_fragment_label"
+        tools:layout="@layout/fragment_read_recipes">
+
+        <action
+            android:id="@+id/action_ReadRecipesFragment_to_HomeFragment"
+            app:destination="@id/HomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/writeRecipesFragment"
+        android:name="com.project1.cookbook.WriteRecipesFragment"
+        android:label="@string/writeRecipes"
+        tools:layout="@layout/fragment_write_recipes">
+
+    <action
+        android:id="@+id/action_writeRecipesFragment_to_HomeFragment"
+        app:destination="@id/HomeFragment" />
+    </fragment>
+</navigation>

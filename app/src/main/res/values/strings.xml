@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">cookBook</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="home_fragment_label">Home Fragment</string>
+    <string name="read_recipes_fragment_label">Read Recipes</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello">Hello!</string>
+    <string name="hello2">Let\'s get cooking!</string>
+    <string name="tvRead">Read Recipes</string>
+    <string name="tvWrite">Write Recipes</string>
+    <string name="btnRead">button read</string>
+    <string name="btnWrite">button write</string>
+    <string name="writeRecipes">Write Recipes</string>
+    <string name="choose_dish">Main Dishes</string>
+</resources>
