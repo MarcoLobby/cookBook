@@ -6,14 +6,14 @@
     android:layout_height="match_parent"
     android:layout_marginTop="?android:attr/actionBarSize"
     tools:context=".ReadRecipesFragment"
-    android:padding="16dp"
+    android:padding="@dimen/fragmentReadPadding"
     android:background="@drawable/background_2">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvReadRecipes"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="16dp"
+        android:padding="@dimen/rvReadRecipesPadding"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
