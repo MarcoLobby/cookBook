@@ -2,4 +2,5 @@
 <resources>
     <dimen name="imgBtnWidth">100dp</dimen>
     <dimen name="imgBtnHeight">100dp</dimen>
+    <dimen name="et_min_height">48dp</dimen>
 </resources>

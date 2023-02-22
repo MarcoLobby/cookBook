@@ -1,13 +1,15 @@
 <resources>
     <dimen name="margin_16">16dp</dimen>
     <dimen name="hello_title">60sp</dimen>
+    <dimen name="insert_title">50sp</dimen>
     <dimen name="btnChooseDishTextSize">50sp</dimen>
     <dimen name="btnChooseDishLayoutHeight">130dp</dimen>
     <dimen name="tvHello2Size">30sp</dimen>
     <dimen name="tvHomeButtonSize">30sp</dimen>
     <dimen name="tvWriteMarginBottom">100dp</dimen>
     <dimen name="rvReadRecipesPadding">16dp</dimen>
-    <dimen name="fragmentReadPadding">16dp</dimen>
+    <dimen name="fragmentPadding">16dp</dimen>
     <dimen name="imgBtnWidth">100dp</dimen>
     <dimen name="imgBtnHeight">100dp</dimen>
+    <dimen name="et_min_height">48dp</dimen>
 </resources>

@@ -15,4 +15,8 @@
     <string name="btnWrite">button write</string>
     <string name="writeRecipes">Write Recipes</string>
     <string name="choose_dish">Main Dishes</string>
+    <string name="et_insert_recipe_title">Insert the title of your recipe</string>
+    <string name="title">Please Insert the title of your recipe!</string>
+    <string name="btn_confirm">Confirm</string>
+    <string name="insert_your_title_please">Insert your title please:</string>
 </resources>

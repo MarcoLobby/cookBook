@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:layout_marginTop="?android:attr/actionBarSize"
     tools:context=".ReadRecipesFragment"
-    android:padding="@dimen/fragmentReadPadding"
+    android:padding="@dimen/fragmentPadding"
     android:background="@drawable/background_2">
 
     <androidx.recyclerview.widget.RecyclerView

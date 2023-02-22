@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="et_insert_recipe_title">Insert the title of your recipe</string>
+    <string name="title">Titolo!</string>
+    <string name="btn_confirm">Confirm</string>
+    <string name="insert_your_title_please">Insert your title please:</string>
+</resources>
