@@ -7,7 +7,7 @@ import android.widget.Button
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 
-class DishesAdapter(private val list: List<Dishes>) :
+class DishesAdapter(private val list: List<Dishes>, private val onClick: () -> Unit) :
     RecyclerView.Adapter<DishesAdapter.DishesViewHolder>() {
 
     class DishesViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
@@ -30,8 +30,12 @@ class DishesAdapter(private val list: List<Dishes>) :
     override fun onBindViewHolder(holder: DishesViewHolder, position: Int) {
 
         val currentItem = list[position]
-        holder.btnChooseDish.background = ContextCompat.getDrawable(holder.itemView.context, currentItem.background)
+        holder.btnChooseDish.background =
+            ContextCompat.getDrawable(holder.itemView.context, currentItem.background)
         holder.btnChooseDish.text = currentItem.title
+        holder.btnChooseDish.setOnClickListener {
+            onClick()
+        }
 
     }
 

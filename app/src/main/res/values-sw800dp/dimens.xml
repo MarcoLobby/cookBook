@@ -8,7 +8,6 @@
     <dimen name="tvHomeButtonSize">50sp</dimen>
     <dimen name="tvWriteMarginBottom">200dp</dimen>
     <dimen name="rvReadRecipesPadding">16dp</dimen>
-    <dimen name="fragmentReadPadding">16dp</dimen>
     <dimen name="imgBtnWidth">150dp</dimen>
     <dimen name="imgBtnHeight">150dp</dimen>
     <dimen name="et_min_height">48dp</dimen>

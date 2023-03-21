@@ -19,4 +19,7 @@
     <string name="title">Please Insert the title of your recipe!</string>
     <string name="btn_confirm">Confirm</string>
     <string name="insert_your_title_please">Insert your title please:</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="recipes_shown">Recipes shown</string>
 </resources>

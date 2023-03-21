@@ -27,6 +27,10 @@
         <action
             android:id="@+id/action_ReadRecipesFragment_to_HomeFragment"
             app:destination="@id/HomeFragment" />
+
+        <action
+            android:id="@+id/action_ReadRecipesFragment_to_recipeContainerFragment"
+            app:destination="@id/recipeContainerFragment" />
     </fragment>
     <fragment
         android:id="@+id/writeRecipesFragment"
@@ -38,4 +42,14 @@
         android:id="@+id/action_writeRecipesFragment_to_HomeFragment"
         app:destination="@id/HomeFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/recipeContainerFragment"
+        android:name="com.project1.cookbook.RecipeContainerFragment"
+        android:label="fragment_recipe_container"
+        tools:layout="@layout/fragment_recipe_container" >
+
+
+    </fragment>
+
+
 </navigation>
