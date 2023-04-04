@@ -23,31 +23,32 @@ class RecipeContainerFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_recipe_container, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        getDetails()
 
-    }
 
-    private fun getDetails() {
-        lifecycleScope.launch {
-            try {
-                val call = RetrofitInstance().apiServiceInterface.extractRecipe("main course")
-                val text = view?.findViewById<TextView>(R.id.tv_recipeShow)
-                text?.text = call.results[2].title
-                val image = view?.findViewById<ImageView>(R.id.iv_recipeShow)
-                if (image != null) {
-                    context?.let { Glide.with(it).load(call.results[2].image).into(image) }
+        fun getDetails() {
+            lifecycleScope.launch {
+                try {
+                    val call = RetrofitInstance().apiServiceInterface.extractRecipe("main course")
+                    val text = view.findViewById<TextView>(R.id.tv_recipeShow)
+                    text?.text = call.results[2].title
+                    val image = view.findViewById<ImageView>(R.id.iv_recipeShow)
+                    if (image != null) {
+                        context?.let { Glide.with(it).load(call.results[2].image).into(image) }
+                    }
+
+
+                } catch (e: Exception) {
+                    Log.d("Fragment", "ERROR ${e.message}")
                 }
-
-
-            } catch (e: Exception) {
-                Log.d("Fragment", "ERROR ${e.message}")
             }
         }
+        getDetails()
     }
+
+
 }
