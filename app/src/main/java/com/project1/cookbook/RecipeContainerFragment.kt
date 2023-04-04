@@ -28,27 +28,25 @@ class RecipeContainerFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-
-        fun getDetails() {
-            lifecycleScope.launch {
-                try {
-                    val call = RetrofitInstance().apiServiceInterface.extractRecipe("main course")
-                    val text = view.findViewById<TextView>(R.id.tv_recipeShow)
-                    text?.text = call.results[2].title
-                    val image = view.findViewById<ImageView>(R.id.iv_recipeShow)
-                    if (image != null) {
-                        context?.let { Glide.with(it).load(call.results[2].image).into(image) }
-                    }
-
-
-                } catch (e: Exception) {
-                    Log.d("Fragment", "ERROR ${e.message}")
-                }
-            }
-        }
         getDetails()
     }
 
+    fun getDetails() {
+        lifecycleScope.launch {
+            try {
+                val call = RetrofitInstance().apiServiceInterface.extractRecipe("main course")
+                val text = view?.findViewById<TextView>(R.id.tv_recipeShow)
+                text?.text = call.results[2].title
+                val image = view?.findViewById<ImageView>(R.id.iv_recipeShow)
+                if (image != null) {
+                    context?.let { Glide.with(it).load(call.results[2].image).into(image) }
+                }
+
+
+            } catch (e: Exception) {
+                Log.d("Fragment", "ERROR ${e.message}")
+            }
+        }
+    }
 
 }
